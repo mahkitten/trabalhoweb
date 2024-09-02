@@ -1,0 +1,114 @@
+@charset 'UTF-8';
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle dos elementos */
+}
+
+/* Cores da paleta */
+:root {
+    --primary-color: #142840;
+    --secondary-color: #0e1d32;
+    --accent-color: #0b1828;
+    --background-color: #0c1114;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: var(--text-color);
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do título */
+}
+
+nav p {
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo de cada parágrafo */
+}
+
+nav p a {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 15px; /* Adiciona espaçamento interno ao link */
+    border-radius: 5px; /* Bordas arredondadas para os links */
+    display: inline-block; /* Faz com que os links se comportem como botões */
+}
+
+nav p a:hover {
+    background-color: var(--accent-color); /* Efeito de hover */
+}
+
+main p {
+    background-color: var(--secondary-color);
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Adiciona espaçamento entre os parágrafos */
+}
+
+footer p {
+    text-align: end;
+    background-color: var(--primary-color);
+    padding: 10px 20px; /* Adiciona espaçamento interno ao rodapé */
+    color: var(--text-color);
+    border-top: 2px solid var(--accent-color); /* Adiciona uma borda superior */
+}
+
+form {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para destacar */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--primary-color); /* Muda a cor da borda quando focado */
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-color);
+}
